@@ -51,16 +51,3 @@ O objetivo deste projeto é desenvolver um pipeline batch para a ingestão e arq
    git clone https://github.com/seu-usuario/tech-challenge-pipeline-bovespa.git
    cd tech-challenge-pipeline-bovespa
 
-
-## Estrutura do Projeto
-.
-├── README.md
-├── scripts
-│   ├── create_s3_bucket.py
-│   ├── lambda_function.py
-│   └── glue_jobs.py
-├── data
-│   ├── raw
-│   └── refined
-└── notebooks
-    └── athena_visualization.ipynb
