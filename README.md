@@ -44,10 +44,4 @@ O objetivo deste projeto é desenvolver um pipeline batch para a ingestão e arq
 - **Python (para a Lambda)**
 - **Parquet (formato de armazenamento)**
 
-## Como Executar
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/tech-challenge-pipeline-bovespa.git
-   cd tech-challenge-pipeline-bovespa
 
