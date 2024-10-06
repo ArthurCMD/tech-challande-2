@@ -6,10 +6,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import os
 
-# Defina o caminho onde deseja salvar o arquivo
 download_directory = os.path.join(os.getcwd(), 'downloads') 
 
-# Configurar opções do Chrome para download automático
 chrome_options = Options()
 prefs = {
     "download.default_directory": download_directory,  # Definir diretório de download
@@ -23,11 +21,11 @@ chrome_options.add_experimental_option("prefs", prefs)
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-# Acessar a URL desejada
+# Acessar a URL
 url = 'https://sistemaswebb3-listados.b3.com.br/indexPage/day/ibov?language=pt-br'
 driver.get(url)
 
-# Aguarde um tempo para garantir que a página carregue completamente
+# Aguarda um tempo para garantir que a página carregue completamente
 time.sleep(5)
 
 # Localizar o botão de download
@@ -42,3 +40,4 @@ time.sleep(10)
 driver.quit()
 
 print(f"Arquivo salvo em: {download_directory}")
+
